@@ -1,1 +1,82 @@
+---
+title: "**1er Tarea: Probabilidad**"
+author: "nombres"
+date: "2025-04-29"
+output: html_document
+---
+
+**Comprensión de conceptos**
+
+1. ¿Cuáles son las tres propiedades fundamentales de una probabilidad?
+
+* **No negatividad** P(A)≥0, para todo evento A.
+
+* **Normalización** P(Ω)=1
+
+* **Aditividad** Si A∩B=∅
+
+ 2. ¿Qué significa que dos eventos A y B sean mutuamente excluyentes?
+ 
+ 3. Para cualquier par de conjuntos A y B, ¿c´omo se define la probabilidad condicional de A
+ dado B? (P(A|B))
+ 
+ 4. Si los dos conjuntos son disjuntos, i.e. A∩B = ∅. En palabras simples, ¿qu´e significa P(A|B)
+ en este caso?
+ 
+ 5. Si trabajamos bajo el supuesto de que los resultados de un experimento son igualmente
+ probables ¿Cómo se determina la probabilidad de cualquier evento A ⊂ Ω?
+ 
+ 6. ¿Cómo se obtiene la probabilidad total a partir de probabilidades parciales (es decir, 
+ condicionales)?
+
+ 7. ¿Cuál es la regla de Bayes y para qu´e se utiliza?
+ 
+ 8. ¿Qué significa que dos eventos A y B sean independientes?
+ 
+ 9. ¿Qué es P(A∩B) cuando dos eventos A y B son (i) mutuamente excluyentes y 
+ (ii) independientes?
+ 
+ 10. ¿Cómo interpretas una probabilidad?
+ 
+Instrucciones: Justifica tus respuestas con los procedimientos correspondientes.
+
+ **Manejo de teoría**
+ 1. Demuestra que para cualquiera dos eventos A y B en Ω,
+ 1.1. Si A ⊂ B, entonces P(A) ≤ P(B).
+ 
+```
+Dem.
+
+Sabemos que A ⊂ B, entonces para un valor x contenido en A, x esta dentro
+de B, entonces podemos afirmar que:
+
+B = AU(B\A)
+⇒ P(B) = P(A)+P(B\A)
+⇒ P(B\A) = P(B)-P(A)
+
+Y por la propiedad de la no negatividad de la probabilidad P(w) para todo evento w
+se cumple que P(B\A)≥0
+
+⇒ P(B)-P(A)≥0 
+⇒ P(B)≥P(A)
+⇒ P(A)≤ P(B), donde P(A)  y P(B)≥0
+
+∴ Si A ⊂ B, entonces P(A) ≤ P(B) QED.
+
+```
+ 1.2. Si A y B son independientes, entonces A y Bc son independientes
+ 
+ 2. Una manera de diseñar filtros para correo “spam” es analizando las palabras en el correo.
+ Existen palabras que son mucho m´as frecuentes en correos spam. Supongamos que se cuenta
+ con la siguiente información:
+ *50% de los correos que se reciben son spam.
+ *10% de los correos spam tienen la palabra “regalo”.
+ *0.01% de los correos que no son spam tienen la palabra “regalo”.
+ 
+ Supongamos que en un correo se detecta la palabra “regalo”. ¿Cuál es la probabilidad de que
+ sea un correo spam?
+ 
+3. Se lanzan dos dados honestos: X es el número que cae en el primer dado y Y es el número
+ que cae en el segundo dado. Sea A el evento X = 2 y B el evento X +Y = 7. ¿Los eventos
+ A y B son independientes? 
 
