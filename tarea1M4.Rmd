@@ -161,7 +161,25 @@ se cumple que P(B\A)≥0
 ∴ Si A ⊂ B, entonces P(A) ≤ P(B) QED.
 
 ```
- 1.2. Si A y B son independientes, entonces A y Bc son independientes
+ 1.2. Si A y B son independientes, entonces $A^c$ y $B^c$   son independientes
+
+Dem
+
+Sabemos que:
+
+$P(A^c ∩ B^c) = 1- P(AUB)= 1-[P(A)+P(B)-P(A∩B)]\\$
+
+Como A y B son indepentiendes:
+ $= 1-[P(A)+P(B)-P(A)*P(B)]= 1-P(A)-P(B)+P(A)*P(B)$
+ 
+Factorizamos $= 1-P(B)-P(A)[1-P(B)] = [1-P(B)]-P(A)*[1-P(B)]\\$
+$= [1-P(A)][1-P(B)] = P(A^c)*P(B^c)\\$
+
+Lo cual implica que: $P(A^c ∩ B^c)=P(A^c)*P(B^c)$ si A y B son independentes
+
+Y el resultado anterior es la definición de independencia.
+
+$∴ A^c$ y $B^c$  son independientes.
  
  2. Una manera de diseñar filtros para correo “spam” es analizando las palabras en el correo.
  Existen palabras que son mucho m´as frecuentes en correos spam. Supongamos que se cuenta
