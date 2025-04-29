@@ -11,6 +11,7 @@ output: html_document
 + Fernández Sánchez Yahir Sebastian
 + Gonzalez García Abimael
 + Mosqueda Nieto Fernanda
++ Ortega Riva Palacio Juan Carlos
 
 **Comprensión de conceptos**
 
@@ -27,7 +28,7 @@ output: html_document
 Si dos eventos A y B son mutuamente excluyentes o disjuntos quiere decir que ambos no pueden suceder al mismo tiempo.
 Por ejemplo, en el caso del lanzamiento de una moneda, existen 2 eventos posibles, que caiga "Sol" o que caiga "Águila", el resultado de dicho lanzamiento sólo puede ser **uno** de estos dos eventos, mas no ambos a la vez.
 
- 3. Para cualquier par de conjuntos A y B, ¿c´omo se define la probabilidad condicional de A
+ 3. Para cualquier par de conjuntos A y B, ¿cómo se define la probabilidad condicional de A
  dado B? (P(A|B))
 
 Matemáticamente, la probabilidad condicional de \(A\) dado \(B\) se define como:
