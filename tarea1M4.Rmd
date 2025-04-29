@@ -4,6 +4,10 @@ author: "nombres"
 date: "2025-04-29"
 output: html_document
 ---
+# Integrantes: 
+
++ Cornejo Peralta Luis Axel
++ Domínguez Amaro Aurora
 
 **Comprensión de conceptos**
 
@@ -59,9 +63,13 @@ $$
 Se utiliza para actualizar la probabilidad de un evento conforme se obtiene nueva información. Es fundamental en contextos de inferencia estadística, diagnóstico médico, aprendizaje automático y toma de decisiones bajo incertidumbre.
  
  8. ¿Qué significa que dos eventos A y B sean independientes?
+Esto significa que la ocurrencia de un evento, no cambia la probabilidad del otro evento. Es decir: 
+P(A | B) = P(A) ⇔ P(A ∩ B) = P(A)P(B).
  
  9. ¿Qué es P(A∩B) cuando dos eventos A y B son (i) mutuamente excluyentes y 
  (ii) independientes?
+i) Cuando A y B son dos eventos mutuamente excluyentes, entonces P(A∩B) = 0
+ii) Cuando A y B son dos eventos independientes, entonces P(A∩B) = P(A)*P(B)
  
  10. ¿Cómo interpretas una probabilidad?
  
