@@ -23,6 +23,15 @@ output: html_document
  
  3. Para cualquier par de conjuntos A y B, ¿c´omo se define la probabilidad condicional de A
  dado B? (P(A|B))
+
+Matemáticamente, la probabilidad condicional de \(A\) dado \(B\) se define como:
+
+\[
+P(A \mid B) \;=\; \frac{P(A \cap B)}{P(B)}, 
+\quad P(B) > 0.
+\]
+
+Que en simples palabras se refiere a la probabilidad de que ocurra un suceso cuando ya ha ocurrido otro, en este caso que ocurra el suceso \(A\) sabiendo que ya ocurrió el suceso \(B\).
  
  4. Si los dos conjuntos son disjuntos, i.e. A∩B = ∅. En palabras simples, ¿qu´e significa P(A|B)
  en este caso?
@@ -51,6 +60,44 @@ $$
  
  6. ¿Cómo se obtiene la probabilidad total a partir de probabilidades parciales (es decir, 
  condicionales)?
+
+Sean \(B_1, B_2, \dots\) eventos mutuamente excluyentes y exhaustivos, tal que para toda \(i = 1,2,\dots\) se tiene \(P(B_i)>0\). Entonces:
+
+\[
+B_i \cap B_j = \varnothing \quad (i\neq j),
+\qquad
+\bigcup_{i=1}^{\infty} B_i = \Omega
+\]
+
+Por propiedad distributiva:
+
+\[
+A = A \cap \Omega
+    = A \cap \bigcup_{i=1}^{\infty} B_i
+    = \bigcup_{i=1}^{\infty} \bigl(A \cap B_i\bigr).
+\]
+
+Como los eventos \(\{A \cap B_i\}\) son disjuntos, por aditividad de la probabilidad:
+
+\[
+P(A)
+= \sum_{i=1}^{\infty} P\bigl(A \cap B_i\bigr).
+\]
+
+Y, por definición de probabilidad condicional para cada \(i\):
+
+\[
+P\bigl(A \cap B_i\bigr)
+= P(A \mid B_i)\,P(B_i).
+\]
+
+Por lo tanto, tenemos que **la probabilidad total** se obtiene como:
+
+\[
+\boxed{%
+P(A) \;=\; \sum_{i=1}^{\infty} P(A \mid B_i)\,P(B_i).
+} 
+\]
 
  7. ¿Cuál es la regla de Bayes y para qué se utiliza?
 
