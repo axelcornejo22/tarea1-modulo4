@@ -8,6 +8,9 @@ output: html_document
 
 + Cornejo Peralta Luis Axel
 + Domínguez Amaro Aurora
++ Fernández Sánchez Yahir Sebastian
++ Gonzalez García Abimael
++ Mosqueda Nieto Fernanda
 
 **Comprensión de conceptos**
 
@@ -20,7 +23,10 @@ output: html_document
 * **Aditividad** Si A∩B=∅
 
  2. ¿Qué significa que dos eventos A y B sean mutuamente excluyentes?
- 
+
+Si dos eventos A y B son mutuamente excluyentes o disjuntos quiere decir que ambos no pueden suceder al mismo tiempo.
+Por ejemplo, en el caso del lanzamiento de una moneda, existen 2 eventos posibles, que caiga "Sol" o que caiga "Águila", el resultado de dicho lanzamiento sólo puede ser **uno** de estos dos eventos, mas no ambos a la vez.
+
  3. Para cualquier par de conjuntos A y B, ¿c´omo se define la probabilidad condicional de A
  dado B? (P(A|B))
 
@@ -35,7 +41,15 @@ Que en simples palabras se refiere a la probabilidad de que ocurra un suceso cua
  
  4. Si los dos conjuntos son disjuntos, i.e. A∩B = ∅. En palabras simples, ¿qu´e significa P(A|B)
  en este caso?
- 
+
+Si dos conjuntos A y B son disjuntos i.e. mutuamente excluyentes, como se mencionó en el punto 2, significa que si uno ya ocurrió, no puede ocurrir el otro, en términos de conjuntos, no tienen nada en común por lo que se cumple que A∩B = ∅.
+De igual manera sabemos lo siguiente:
+
+$$
+P(A|B) = \frac{P(A\cap B)}{P(B)}= \frac{P(\emptyset)}{P(B)}=0 
+$$
+En palabras simples, $P(A|B)$ la *probabilidad de que A ocurra dado que ya ocurrió B* es nula, es un evento imposible; debido a que ya ocurrió B, y ambos no pueden ocurrir simultáneamente (A∩B = ∅) A ya no puede ocurrir. Por lo tanto la probabilidad de que A ocurra dado que ya sucedió B es cero.
+
  5. Si trabajamos bajo el supuesto de que los resultados de un experimento son igualmente
  probables ¿Cómo se determina la probabilidad de cualquier evento A ⊂ Ω?
 
