@@ -193,6 +193,31 @@ $∴ A^c$ y $B^c$  son independientes.
  
  Supongamos que en un correo se detecta la palabra “regalo”. ¿Cuál es la probabilidad de que
  sea un correo spam?
+
+Solución:
+ 
+ Vamos a definir los siguientes eventos:
+ 
+ *S = "El correo es spam"
+ 
+ *N = "El correo no es spam"
+ 
+ *R = "El correo tiene la palabra regalo"
+ 
+ Y tenemos las siguientes probabilidades:
+ 
+ P(S) = 0.5 = P(N), P(R|S) = 0.1  y P(R|N) = 0.0001
+ 
+ Queremos la probabilidad de que el correo sea spam dado que tiene la palabra 'regalo'.
+ 
+ Usando el teorema de Bayes $$P(S|R)=\frac{P(R|S)*P(S)}{P(R)}$$
+
+Calculemos P(R) usando **Regla de probabilidad total**
+
+$P(R)= \sum_{j=1}^k P(R|B_j)*P(B_j)=P(R|N)*R(N)+P(R|S)*P(S)=0.0001*(0.5)+0.1*(0.5)=0.05005$
+
+$⇒ P(S|R)=\frac{(0.1)*(0.5)}{0.05005} ≈ 0.999$
+
  
 3. Se lanzan dos dados honestos: X es el número que cae en el primer dado y Y es el número
  que cae en el segundo dado. Sea A el evento X = 2 y B el evento X +Y = 7. ¿Los eventos
