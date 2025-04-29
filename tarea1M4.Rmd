@@ -61,7 +61,7 @@ $$
  6. ¿Cómo se obtiene la probabilidad total a partir de probabilidades parciales (es decir, 
  condicionales)?
 
-Sean \(B_1, B_2, \dots\) eventos mutuamente excluyentes y exhaustivos, tal que para toda \(i = 1,2,\dots\) se tiene \(P(B_i)>0\). Entonces:
+Sean \(B_1, B_2, \dots\) eventos mutuamente excluyentes y exhaustivos, tal que para toda \(i = 1,2,\dots\) se tiene que \(P(B_i)>0\). Entonces:
 
 \[
 B_i \cap B_j = \varnothing \quad (i\neq j),
@@ -161,4 +161,53 @@ se cumple que P(B\A)≥0
 3. Se lanzan dos dados honestos: X es el número que cae en el primer dado y Y es el número
  que cae en el segundo dado. Sea A el evento X = 2 y B el evento X +Y = 7. ¿Los eventos
  A y B son independientes? 
+
+Sabemos que \(A\) y \(B\) son independientes si se cumple que
+
+\[
+P(A \cap B) = P(A)\,P(B).
+\]
+
+Dado que se lanzan dos dados honestos, el espacio muestral consta de 36 pares de resultados equiprobables \((r,s)\), donde \(r\) es el resultado del primer dado y \(s\) del segundo. A continuación, calcularemos la probabilidad de cada evento.
+
+Dado que el evento \(A\) ocurre cuando el primer dado muestra 2, el conjunto de posibles resultados de \(A\) es:
+
+\[
+A = \{(2,1),(2,2),(2,3),(2,4),(2,5),(2,6)\},
+\]
+
+Entonces:
+
+\[
+P(A) = \frac{6}{36} = \frac{1}{6}.
+\]
+
+Para obtener \(P(B)\), notemos que el evento \(B\) es \(X+Y=7\), por lo tanto el conjunto de posibles resultados de \(B\) es:
+
+\[
+B = \{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\},
+\]
+
+Entonces:
+
+\[
+P(B) = \frac{6}{36} = \frac{1}{6}.
+\]
+
+Por último, calculemos \(P(A\cap B)\). Primero notemos que para que ocurra \(A\cap B\) debe darse simultáneamente que \(X=2\) y \(X+Y=7\), lo cual implica \(Y=5\). Dado que el único resultado posible es \((2,5)\), entonces:
+
+\[
+P(A\cap B) = \frac{1}{36}.
+\]
+
+A partir de lo anterior,
+
+\[
+P(A)\,P(B)
+= \frac{1}{6}\times\frac{1}{6}
+= \frac{1}{36}
+= P(A\cap B),
+\]
+
+por lo que **\(A\) y \(B\) son independientes**.
 
