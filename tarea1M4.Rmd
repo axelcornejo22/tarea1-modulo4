@@ -25,11 +25,38 @@ output: html_document
  
  5. Si trabajamos bajo el supuesto de que los resultados de un experimento son igualmente
  probables ¿Cómo se determina la probabilidad de cualquier evento A ⊂ Ω?
+
+Bajo dicho supuesto, la probabilidad de cualquier evento \( A \subset \Omega \) se determina dividiendo el número de casos favorables entre el número total de casos posibles. Es decir:
+
+$$
+P(A) = \frac{\text{número de casos favorables a } A}{\text{número total de casos posibles en } \Omega}
+$$
+
+**Ejemplo:**
+
+Si lanzamos un dado y \( A \) es el evento "salir número par", entonces:
+
+- Casos favorables: {2, 4, 6} → hay 3 casos.  
+- Total de casos: 6.  
+
+Así que:
+
+$$
+P(A) = \frac{3}{6} = \frac{1}{2}
+$$
  
  6. ¿Cómo se obtiene la probabilidad total a partir de probabilidades parciales (es decir, 
  condicionales)?
 
- 7. ¿Cuál es la regla de Bayes y para qu´e se utiliza?
+ 7. ¿Cuál es la regla de Bayes y para qué se utiliza?
+
+La regla de Bayes permite calcular la probabilidad de un evento \( A \) dado que ha ocurrido un evento \( B \), utilizando información previa sobre las probabilidades de \( A \) y \( B \). Su fórmula es:
+
+$$
+P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
+$$
+
+Se utiliza para actualizar la probabilidad de un evento conforme se obtiene nueva información. Es fundamental en contextos de inferencia estadística, diagnóstico médico, aprendizaje automático y toma de decisiones bajo incertidumbre.
  
  8. ¿Qué significa que dos eventos A y B sean independientes?
  
