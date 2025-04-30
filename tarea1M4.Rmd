@@ -137,6 +137,7 @@ i) Cuando A y B son dos eventos mutuamente excluyentes, entonces P(A∩B) = 0
 ii) Cuando A y B son dos eventos independientes, entonces P(A∩B) = P(A)*P(B)
  
  10. ¿Cómo interpretas una probabilidad?
+     La probabilidad es un número entre 0 y 1 que indica que tan seguro/probable es que ocurra un evento teniendo que, un valor cercano a 0 significa que casi no ocurre y un valor cercano a 1 significa que casi siempre ocurre teniendo que en caso de ser la probabilidad 0 quiere decir que no ocurre y si es 1, es seguro que ocurrirá.
  
 Instrucciones: Justifica tus respuestas con los procedimientos correspondientes.
 
